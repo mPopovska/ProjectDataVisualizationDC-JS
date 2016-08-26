@@ -1,2 +1,1 @@
-# ProjectDataVisualization
 # ProjectDataVisualizationDC-JS
