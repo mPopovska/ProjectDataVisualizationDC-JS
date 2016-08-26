@@ -38,7 +38,7 @@
     <input type="number" name="hours"/><br/>
     <p>Holiday</p>
     <input type="checkbox" name="isHoliday"/><br/>
-    <input type="submit" value="submit"/>
+    <input type="submit" value="submit" class="btn btn-primary"/>
 </form>
 </div>
 </body>
