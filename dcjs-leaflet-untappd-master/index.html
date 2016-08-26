@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Project Data Visualization</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/dc.css">
+    <link rel="stylesheet" type="text/css" href="css/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 dc-data-count dc-chart" id="data-count">
+      <h2>Project Planner
+        <small>
+          <span class="filter-count"></span> selected out of <span class="total-count"></span> records |
+           <a id="all" href="#">Reset All</a>
+          </span>
+        </small>
+      </h2>
+    </div>
+  </div>
+  <div class="row" id="control-row">
+    <div class="col-xs-2 pie-chart">
+      <h4>Year <small><a id="year">reset</a></small></h4>
+      <div class="dc-chart" id="chart-ring-year"></div>
+    </div>
+    <div class="col-xs-2 pie-chart">
+      <h4>Month <small><a id="month" href="#">reset</a></small></h4>
+      <div class="dc-chart" id="chart-ring-month"></div>
+    </div>
+    <div class="col-xs-2 pie-chart">
+      <h4>Day <small><a id="day">reset</a></small></h4>
+      <div id="chart-ring-day" class="dc-chart"></div>
+    </div>
+    <div class="col-xs-2 pie-chart">
+      <h4>Holiday <small><a id="day">reset</a></small></h4>
+      <div id="chart-ring-day-holiday" class="dc-chart"></div>
+    </div>
+    <!--div class="col-xs-6">
+      <h4>Projects</h4>
+      <div id="workLogs"></div>
+    </div-->
+  </div>
+  <div class="row" id="control-row">
+    
+    <div class="col-xs-6 col-md-3">
+      <div class="dc-chart" id="chart-rating-count"></div>
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <div class="dc-chart" id="day-of-week-chart"></div>
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <div class="dc-chart" id="chart-ibu-count"></div>
+    </div>
+    
+  </div>
+  <div class="row" id="control-row">
+    <div class="col-xs-6 col-md-3">
+      <div class="dc-chart" id="chart-community-rating-count"></div>
+    </div>
+  </div>
+  <div class="row" id="control-row">
+    <div class="col-xs-12">
+      <table class="table table-bordered table-striped" id="data-table">
+        <thead>
+          <tr class="header">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Tags</th>
+            <th>Hours</th>
+            <th>Description</th>
+            <th>Holiday</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <div class="row" id="control-row">
+    <div class="col-xs-12">
+      <table class="table table-bordered table-striped" id="data-table-project-average">
+        <thead>
+          <tr class="header">
+            <th>Project Name</th>
+            <th>Average Hours By Day</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <div class="row" id="control-row">
+    <div class="col-xs-12">
+      <table class="table table-bordered table-striped" id="data-table-day-average">
+        <thead>
+          <tr class="header">
+            <th>Average Hours By Day</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/d3.js"></script>
+<script type="text/javascript" src="js/crossfilter.js"></script>
+<script type="text/javascript" src="js/dc.js"></script>
+<script type="text/javascript" src="js/leaflet.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/draw.js"></script>
+<script type="text/javascript" src="js/colorbrewer.js"></script>
+
+
+</body></html>
