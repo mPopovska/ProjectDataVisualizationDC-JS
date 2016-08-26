@@ -25,7 +25,7 @@
 <body>
 <div class="container-fluid">
 <h1>Add row</h1>
-<form action="css/addWorkLog" method="post">
+<form action="addWorkLog" method="post">
     <p>Project</p>
     <input type="text" name="project"/><br/>
     <p>Date</p>

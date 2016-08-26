@@ -79,12 +79,12 @@ public class FileUploadController {
 		};
 		System.out.println(project + " " + date + " " + tags + " " + hours + " " + isHoliday);
 		wls.updateOnRow(project, date, hours, tags, desc, isHoliday);
-		return "createPizza";
+		return "addRow";
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/addWorkLog")
 	public String addNewRow(Model model) throws IOException {
-		return "createPizza";
+		return "addRow";
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/{filename:.+}")
