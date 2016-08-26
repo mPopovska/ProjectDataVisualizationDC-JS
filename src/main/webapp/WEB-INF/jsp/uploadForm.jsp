@@ -19,7 +19,7 @@
 	<div>
 		<form method="POST" enctype="multipart/form-data" action="/">
 			<table>
-				<tr><td>File to upload:</td><td class="btn btn-primary">Choose file<input type="file" name="file" style="display: none;" /></td></tr>
+				<tr><td>File to upload:</td><td class="btn btn-primary"><input type="file" name="file" /></td></tr>
 				<tr><td></td><td><input type="submit" value="Upload" class="btn btn-primary"/></td></tr>
 			</table>
 		</form>
