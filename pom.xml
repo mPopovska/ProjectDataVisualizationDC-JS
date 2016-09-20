@@ -374,6 +374,16 @@
 			    <artifactId>spring-hateoas</artifactId>
 			    <version>0.21.0.RELEASE</version>
 			</dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
     </dependencies>
 
 
