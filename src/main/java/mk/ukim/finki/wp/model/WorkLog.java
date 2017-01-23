@@ -1,12 +1,11 @@
 package mk.ukim.finki.wp.model;
 
-import java.util.Date;
-import java.util.List;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import mk.ukim.finki.wp.service.impl.CustomDateSerializer;
 
 import javax.persistence.*;
-
-import mk.ukim.finki.wp.service.impl.CustomDateSerializer;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name="WorkLogs")
@@ -31,6 +30,34 @@ public class WorkLog {
 		this.hours = hours;
 		this.description = description;
 		this.isHoliday = isHoliday;
+	}
+
+	public void setProject(Project project) {
+		this.project = project;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setDatum(Date datum) {
+		this.datum = datum;
+	}
+
+	public void setTags(List<Tag> tags) {
+		this.tags = tags;
+	}
+
+	public void setHours(float hours) {
+		this.hours = hours;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public void setHoliday(boolean holiday) {
+		isHoliday = holiday;
 	}
 
 	public WorkLog() {

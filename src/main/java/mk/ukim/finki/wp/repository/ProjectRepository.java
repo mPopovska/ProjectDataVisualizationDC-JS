@@ -1,6 +1,7 @@
 package mk.ukim.finki.wp.repository;
 
-import java.util.List;
+import mk.ukim.finki.wp.model.Project;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -8,10 +9,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
-
-import mk.ukim.finki.wp.model.Project;
-
-import org.springframework.stereotype.Repository;
+import java.util.List;
 
 @Repository
 public class ProjectRepository {

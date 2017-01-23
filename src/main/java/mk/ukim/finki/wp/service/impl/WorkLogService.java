@@ -1,19 +1,18 @@
 package mk.ukim.finki.wp.service.impl;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.StringTokenizer;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import mk.ukim.finki.wp.model.Project;
 import mk.ukim.finki.wp.model.Tag;
 import mk.ukim.finki.wp.model.WorkLog;
 import mk.ukim.finki.wp.repository.ProjectRepository;
 import mk.ukim.finki.wp.repository.TagRepository;
 import mk.ukim.finki.wp.repository.WorkLogRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.StringTokenizer;
 
 @Service
 public class WorkLogService implements mk.ukim.finki.wp.service.WorkLogService {
