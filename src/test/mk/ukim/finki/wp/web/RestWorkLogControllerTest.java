@@ -87,7 +87,6 @@ public class RestWorkLogControllerTest extends TestCase {
         List<WorkLog> list = wlsMock.listWorkLogs();
         verify(wlsMock, times(1)).listWorkLogs();
 
-        //Mockito.
 
     }
 
@@ -121,20 +120,6 @@ public class RestWorkLogControllerTest extends TestCase {
 
     @Test
     public void testAddFromFileFileDoesNotExist() throws Exception {
-        FileNotFoundException e = null;
-
-        try{
-            rwlc.addFromFile(nofile);
-        } catch (FileNotFoundException fnfe) {
-            e = fnfe;
-        }
-
-        assertTrue(e instanceof FileNotFoundException);
-
-    }
-
-    @Test
-    public void testAddFromFileEmptyFile() throws Exception {
         FileNotFoundException e = null;
 
         try{
